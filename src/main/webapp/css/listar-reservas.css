@@ -1,0 +1,75 @@
+/* lista-reservas.css */
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f8; /* blanco grisáceo suave */
+    color: #333; /* texto negro suave */
+    margin: 20px;
+}
+
+/* Título */
+h2 {
+    color: #1f618d; /* azul oscuro */
+    text-align: center;
+}
+
+/* Enlace "Nueva Reserva" */
+a.nueva-reserva {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #1f618d; /* azul */
+    font-weight: bold;
+}
+
+a.nueva-reserva:hover {
+    color: #2874a6; /* azul más claro */
+    text-decoration: underline;
+}
+
+/* Tabla de reservas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff; /* fondo blanco */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabecera de la tabla */
+th {
+    background-color: #1f618d; /* azul oscuro */
+    color: #ffffff; /* letras blancas */
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Celdas */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Filas alternadas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover en filas */
+tr:hover {
+    background-color: #d1ecf1;
+}
+
+/* Botón eliminar */
+a.eliminar {
+    background-color: #e74c3c; /* rojo */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+a.eliminar:hover {
+    background-color: #c0392b;
+}
