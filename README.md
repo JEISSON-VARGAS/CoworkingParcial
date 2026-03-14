@@ -45,8 +45,8 @@ El proyecto sigue una arquitectura en capas organizada de la siguiente manera:
 
 ## 🛠 Requisitos
 
-- Java JDK 11 o superior  
-- Apache Tomcat 10 o superior  
+- Java JDK 17   
+- Apache Tomcat 10  
 - Maven 3 o superior  
 
 ---
