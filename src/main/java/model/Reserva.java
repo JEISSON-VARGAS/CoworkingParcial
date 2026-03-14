@@ -4,28 +4,35 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "reservas")
+/**
+ * Clase modelo que representa una reserva de un espacio de coworking.
+ * Esta clase se mapea a la tabla "reservas" de la base de datos usando JPA.
+ */
+@Entity // Define Una Clase Como Entidad
+@Table(name = "reservas") // Nombre de la tabla en Base de datos
 public class Reserva {
+    // Atributo Id Autoincrementable
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false) // No puede ser falsa y nombre de la columna
     private String nombre;
 
-    @Column(nullable = false)
+    @Column(nullable = false) // No puede ser falsa y nombre de la columna
     private String espacio;
 
-    @Column(nullable = false)
+    @Column(nullable = false) // No puede ser falsa y nombre de la columna
     private Integer duracion;
 
-    @Column(nullable = false)
+    @Column(nullable = false) // No puede ser falsa y el nombre de la columna
     private LocalDate fecha;
 
+    // Constructor vacio
     public Reserva() {
     }
 
+    // Constructor Con Argumentos
     public Reserva(String nombre, String espacio, Integer duracion, LocalDate fecha) {
         this.nombre = nombre;
         this.espacio = espacio;
@@ -33,6 +40,8 @@ public class Reserva {
         this.fecha = fecha;
     }
 
+
+    // Getters y Setters
     public Long getId() {
         return id;
     }
