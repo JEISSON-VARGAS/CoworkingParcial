@@ -15,7 +15,7 @@ El proyecto sigue una arquitectura en capas organizada de la siguiente manera:
 
 ### 2. Capa Config (`src/main/java/config`)
 - Contiene clases de **configuración del sistema**, principalmente `JPAUtil.java`.
-- `JPAUtil.java` crea y gestiona la **factoria de EntityManager**, permitiendo a los repositorios interactuar con la base de datos mediante JPA.
+- `JPAUtil.java` crea y gestiona la **factoría de EntityManager**, permitiendo a los repositorios interactuar con la base de datos mediante JPA.
 
 ### 3. Capa Repository (`src/main/java/repository`)
 - Contiene las clases que interactúan directamente con la base de datos.
@@ -48,6 +48,23 @@ El proyecto sigue una arquitectura en capas organizada de la siguiente manera:
 - Java JDK 11 o superior  
 - Apache Tomcat 10 o superior  
 - Maven 3 o superior  
+
+---
+
+## 🌐 URLs y Rutas
+
+- **URL principal de la aplicación**:  
+http://localhost:8080/reserva-1.0-SNAPSHOT/
+
+Redirige al formulario de registro de reservas (`index.jsp`).
+
+- **Formularios y JSPs**:
+  - `/index.jsp` → Formulario de registro de reservas.
+  - `/listar-reservas` → Lista de reservas (Servlet + JSP).
+
+- **Servlets**:
+  - `/guardar-reserva` → Guarda los datos enviados desde `index.jsp`.
+  - `/eliminar-reserva?id={id}` → Elimina la reserva con el ID especificado y redirige a listar reservas.
 
 ---
 
